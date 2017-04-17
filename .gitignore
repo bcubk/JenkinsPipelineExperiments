@@ -1,2 +1,5 @@
 *.iml
 .idea
+src/main/groovy/pipeline.gdsl
+target
+
