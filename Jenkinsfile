@@ -3,8 +3,8 @@ node() {
         checkout scm
     }
 
+    def mvnHome = tool 'maven-3.5.0'
     stage("Build") {
-        def mvnHome = tool 'maven-3.5.0'
         sh "${mvnHome}/bin/mvn clean install"
     }
 
